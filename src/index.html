@@ -1,0 +1,931 @@
+<!-- src/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;100;300;900&display=swap" rel="stylesheet">
+
+    <title>Design System</title>
+</head>
+
+<body>
+
+    <header
+        class="header  max-md:border-gray-100 border-b border-transparent bg-gray  backdrop-blur-xl bg-gray/50 md:border-gray-100  ">
+        <div class="heaeder-content max-w-7xl px-4 md:px-8 ">
+            <a>
+                <h3 class="logo-text">&lt;BEE /&gt;</h3>
+            </a>
+            <div class="heaeder-content__nav">
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="vertical-line"></div>
+                <div class="heaeder-content__button">
+                    <button class="btn">Download CV</button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden heaeder-content__mobile p-4">
+            <button class="menu-btn" aria-label="Toggle menu">
+                <!-- SVG Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="mobile-menu">
+                <div class="mobile-menu__header">
+                    <h3 class="logo-text">&lt;SS /&gt;</h3>
+                    <button class="close-btn " style="margin-inline-start: auto; margin-inline-end: 0;"
+                        aria-label="Toggle menu">
+                        <!-- SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="mobile-menu__nav ">
+                    <ul class="mobile-menu__links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class=" w-full flex flex-col gap-1 p-5 ">
+                    <div class="flex items-center justify-between">
+                        <p class=" text-normal text-base">Switch Theme</p>
+                        <button
+                            class="menu-btn relative flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&amp;_svg]:stroke-gray-600 [&amp;_svg]:hover:stroke-gray-700 [&amp;_svg]:w-6 [&amp;_svg]:h-6"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-moon-star">
+                                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                                <path d="M19 3v4"></path>
+                                <path d="M21 5h-4"></path>
+                            </svg></button>
+                    </div>
+                    <button class="btn px-5">Download CV</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    <main class="main-content">
+        <section class=" bg-gray py-16 md:py-20 2xl:py-24" id="hero">
+            <div class="max-w-7xl 	 flex flex-col gap-12 mx-auto  md:flex-row md:gap-12 px-4 md:px-8 ">
+                <div class="flex items-center justify-center md:order-last md:flex-grow md:justify-end">
+                    <div class="relative h-[300px] w-[280px] md:h-[360px] md:w-[320px]"><img alt="Headshot of Sagar"
+                            loading="lazy" width="1067" height="1067" decoding="async" data-nimg="1"
+                            class="absolute z-10 h-[280px] w-[240px] border-8 border-white max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]"
+                            style="color:transparent;object-fit:cover" src="./asset/images/abd2.jpg">
+                        <div
+                            class="absolute h-[280px] w-[280px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:right-0 md:h-[320px] md:w-[280px]">
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex max-w-3xl flex-grow flex-col justify-center gap-8 md:order-first md:items-start md:justify-center 2xl:gap-12">
+                    <h1
+                        class="text-4xl font-semibold md:font-bold md:text-5xl md:tracking-[-0.02em] lg:text-6xl lg:leading-[72px] text-gray-900">
+                        Hi, I'm Abd Alnaser<!-- --> <span class="inline-block animate-waving-hand">👋</span>
+                    </h1>
+                    <p class="text-normal text-base">I'm a full stack developer specializing in crafting exceptional
+                        digital experiences using Vue.js for the frontend and Javalin or Spring Boot for the backend. My
+                        focus is on building fast, accessible, visually appealing, and responsive web applications.
+
+                        With 3 years of experience in web development, I remain deeply passionate about the art of
+                        creating seamless and impactful digital solutions. From designing intuitive interfaces to
+                        architecting robust backend systems, I thrive on tackling challenges and delivering work that
+                        leaves a lasting impression.
+
+                    </p>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="stroke-gray-600">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <p class="text-normal text-base">Palestine, Ramallah</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex h-6 w-6 items-center justify-center"><span
+                                    class="relative flex h-3 w-3"><span
+                                        class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span><span
+                                        class="relative inline-flex h-3 w-3 rounded-full bg-emerald-500"></span></span>
+                            </div>
+                            <p class="text-normal text-base">Available for new projects</p>
+                        </div>
+                        <div class="flex gap-1"><button
+                                class="relative flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&amp;_svg]:stroke-gray-600 [&amp;_svg]:hover:stroke-gray-700 [&amp;_svg]:w-6 [&amp;_svg]:h-6"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-github">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                    </path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg></button><button
+                                class="relative flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&amp;_svg]:stroke-gray-600 [&amp;_svg]:hover:stroke-gray-700 [&amp;_svg]:w-6 [&amp;_svg]:h-6"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-twitter">
+                                    <path
+                                        d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                    </path>
+                                </svg></button><button
+                                class="relative flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&amp;_svg]:stroke-gray-600 [&amp;_svg]:hover:stroke-gray-700 [&amp;_svg]:w-6 [&amp;_svg]:h-6"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-figma">
+                                    <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+                                    <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+                                    <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+                                    <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+                                    <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
+                                </svg></button></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </section>
+        <section class="bg-gray-50 py-16 md:py-20 2xl:py-24" id="about">
+            <div class="max-w-7xl  flex flex-col gap-12 mx-auto px-4 md:px-8">
+                <div class="self-center">
+                    <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                        <p class="text-normal text-sm font-medium">About me</p>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between md:flex-row gap-12">
+                    <div class="flex justify-center md:order-first md:justify-end">
+                        <div class="relative h-[380px] w-[320px] md:h-[460px] md:w-[380px] lg:h-[520px] lg:w-[440px]">
+                            <img alt="Fullpose of Sagar" loading="lazy" width="1833" height="2318" decoding="async"
+                                data-nimg="1"
+                                class="absolute z-10 h-[360px] w-[280px] border-8 border-gray-50 max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"
+                                style="color:transparent;object-fit:cover" src="./asset/images/abd1.jpg">
+                            <div
+                                class="absolute h-[360px] w-[320px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:left-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex max-w-xl flex-col gap-6">
+                        <h3 class="text-2xl md:text-3xl font-semibold tracking-[-0.02em] text-gray-900">Wondering about
+                            me? Here it is:</h3>
+                        <p class="text-normal text-base">I'm a passionate full stack developer
+                            specializing in crafting exceptional digital experiences using Vue.js for the frontend
+                            and Javalin or Spring Boot for the backend. I thrive on bringing the technical and
+                            visual aspects of digital products to life. Building intuitive user experiences,
+                            maintaining clean, readable, and highly performant code, and ensuring pixel-perfect
+                            execution are what drive me.
+
+                            .</p>
+                        <p class="text-normal text-base">I began my journey as a web developer three years ago, and in
+                            that time, I’ve tackled diverse challenges, learned new technologies, and honed my skills to
+                            deliver robust and responsive web applications. From designing user-centric interfaces to
+                            engineering scalable backend solutions, I enjoy working on projects end-to-end—from ideation
+                            to deployment.
+                        </p>
+                        <p class="text-normal text-base"> or join the conversation on enjoying
+                            When I’m not coding, you might catch me "floating like a butterfly and stinging like a bee"
+                            in the boxing ring—or at least trying to. But if that’s a miss, you can always find me on
+                            <a target="_blank"
+                                class="underline underline-offset-4 transition-all hover:text-gray-900 active:text-gray-600"
+                                href="https://github.com/shahsagarm">GitHub</a> or <a target="_blank"
+                                class="underline underline-offset-4 transition-all hover:text-gray-900 active:text-gray-600"
+                                href="https://github.com/shahsagarm">Twitter</a>, where I share tips,
+                            experiences, and occasionally punch out some code!
+
+
+                        </p>
+
+                        <p class="text-normal text-base">Finally, some quick bits about me.</p>
+                        <div class="flex flex-col gap-2 md:flex-row md:gap-6">
+                            <ul class="flex list-inside list-disc flex-col gap-2">
+                                <li class="text-normal text-base">B.E. in Computer Engineering</li>
+                                <li class="text-normal text-base">Full time freelancer</li>
+                            </ul>
+
+                        </div>
+                        <p class="text-normal text-base">One last thing, I'm available for freelance work, so feel free
+                            to reach out and say hello! I promise I don't bite 😉</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+        <section class="bg-gray py-16 md:py-20 2xl:py-24" id="skills">
+            <div class="flex flex-col max-w-7xl mx-auto gap-6 md:gap-12 px-4 md:px-8">
+                <div class="flex flex-col items-center gap-4">
+                    <div class="self-center">
+                        <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                            <p class="text-normal text-sm font-medium">Skills</p>
+                        </div>
+                    </div>
+                    <p class="text-normal text-lg md:text-xl max-w-xl text-center">The skills, tools and technologies I
+                        am really good at:</p>
+                </div>
+                <div class="grid grid-cols-3 gap-y-4 md:grid-cols-6 md:gap-y-8 lg:grid-cols-8 lg:gap-y-12">
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/icon-javscript.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Javascript</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/icon-typescript.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Typescript</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="80" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/vue.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Vue</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/angular.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Angular</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/leaflet.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Leaflet</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="44" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/icon-figma.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Figma</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/storybook.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Storybook</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/icon-cypress.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Cypress</p>
+                    </div>
+
+
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/icon-sass.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Sass</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="106" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/icon-tailwindcss.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Tailwind</p>
+                    </div>
+
+
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/java.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Java</p>
+                    </div>
+
+
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/spring.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Springboot</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/javalin.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Javalin</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/icon-git.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Git</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/postman.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Postman</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2"><a target="_blank" class=""
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img alt="Javascript" loading="lazy" width="64" height="64" decoding="async" data-nimg="1"
+                                class="transition-transform duration-300 md:hover:scale-110"
+                                src="./asset/images/icon-postgresql.svg" style="color: transparent;"></a>
+                        <p class="text-normal text-base md:text-lg">Postgresql</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="bg-gray-50 py-16 md:py-20 2xl:py-24" id="experiences">
+            <div class="flex flex-col max-w-7xl mx-auto gap-6 md:gap-12 px-4 md:px-8">
+                <div class="flex flex-col items-center gap-4">
+                    <div class="self-center">
+                        <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                            <p class="text-normal text-sm font-medium">Experince</p>
+                        </div>
+                    </div>
+                    <p class="text-normal text-lg md:text-xl max-w-xl text-center">Here is a quick summary of my most
+                        recent experiences:
+                    </p>
+                </div>
+                <div class="flex flex-col gap-6 md:gap-12 items-center">
+                    <!-- Experince Cards  -->
+                    <div
+                        class="hidden rounded-xl shadow-md bg-white  flex w-full max-w-4xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
+                        <div class="max-md:order-1 md:w-1/4">
+                        </div>
+                        <div class="flex flex-col gap-4 max-md:order-3 md:w-2/4">
+                            <p class="text-lg md:text-xl font-semibold text-gray-900">Independent Freelancer</p>
+                            <ul class="flex list-disc flex-col gap-2 md:gap-1">
+                                <li class="text-normal text-base">Worked for various clients like Fiskil, Shosho, Crowe
+                                    MacKay LLP.</li>
+                                <li class="text-normal text-base">Worked with a variety of technologies, including
+                                    React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase,
+                                    Storybook, Cypress, and others.</li>
+                            </ul>
+                        </div>
+                        <div class="max-md:order-2 md:w-1/4">
+                            <p class="text-base text-gray-700 md:text-right">Dec 2022<!-- --> <!-- -->-<!-- -->
+                                <!-- -->Present
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-xl shadow-md bg-white  flex w-full max-w-4xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
+                        <div class="max-md:order-1 md:w-1/4"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_2"
+                                viewBox="0 0 1100.6727 286.2474">
+                                <g id="Components">
+                                    <g id="daabe9bb-51f8-413f-b19e-d4319617126c_1">
+                                        <path
+                                            d="m373.4547,143.2414h65.1592v-24.5293h-64.9028l.1298-11.6992c0-8.4716,5.1187-12.5899,15.6481-12.5899h56.6766v-26.4963h-56.6766c-37.6061,0-43.2214,22.3572-43.2214,35.6729l-.3564,90.7882h107.0745v-26.4976h-79.6622l.1311-24.6488Z"
+                                            style="fill:#24374a; stroke-width:0px;" />
+                                        <path
+                                            d="m532.8745,94.3035h-26.2042c-28.2153,0-43.7537,17.7715-43.7537,50.0415s15.5384,50.0428,43.7537,50.0428h39.1667v38.0488h24.5157v-94.9117c0-35.7222-20.3805-43.2214-37.4782-43.2214Zm12.9625,76.2859h-37.3717c-14.9392,0-21.0329-7.603-21.0329-26.2444,0-18.7634,6.0937-26.4171,21.0329-26.4171h18.8517c13.6733,0,18.52,5.3647,18.52,20.5006v32.1609Z"
+                                            style="fill:#24374a; stroke-width:0px;" />
+                                        <path
+                                            d="m672.3514,170.4596l-20.4876.1298h-15.4352c-12.7522,0-20.6739-6.48-20.6739-16.9107v-59.3752h-24.5157v60.0931c0,24.6669,16.7653,39.9911,43.7537,39.9911h61.3428v-100.0843h-23.984v76.1561Z"
+                                            style="fill:#24374a; stroke-width:0px;" />
+                                        <rect x="717.7533" y="94.3035" width="24.343" height="100.0843"
+                                            style="fill:#24374a; stroke-width:0px;" />
+                                        <rect x="717.7533" y="58.593" width="24.5287" height="27.3882"
+                                            style="fill:#24374a; stroke-width:0px;" />
+                                        <path
+                                            d="m827.3829,94.3035h-26.2042c-30.9762,0-37.4782,23.5036-37.4782,43.2214v94.9117h24.343v-38.0488h39.3394c27.6959,0,43.5804-18.2402,43.5804-50.0428s-15.8844-50.0415-43.5804-50.0415Zm-39.3394,76.2859v-32.1609c0-15.1359,4.895-20.5006,18.7057-20.5006h18.6531c15.1353,0,21.0323,7.407,21.0323,26.4171,0,18.8868-5.897,26.2444-21.0323,26.2444h-37.3588Z"
+                                            style="fill:#24374a; stroke-width:0px;" />
+                                        <polygon
+                                            points="916.3687 71.8801 891.8397 71.8801 891.8397 94.3074 878.9168 94.3074 878.9168 117.9331 891.8397 117.9331 891.8397 194.393 942.2139 194.393 942.2139 171.6709 916.3687 171.6709 916.3687 117.9331 942.5729 117.9331 942.5729 94.3074 916.3687 94.3074 916.3687 71.8801"
+                                            style="fill:#24374a; stroke-width:0px;" />
+                                        <path
+                                            d="m1019.0552,94.3035h-59.5608v23.6244h59.3745c7.887,0,11.8862,3.5159,11.8862,10.4502v4.5208h-42.3976c-23.2868,0-34.607,9.7933-34.607,29.9395,0,20.6395,11.9073,31.5494,34.4343,31.5494h66.5543v-66.1953c0-21.8535-12.6727-33.889-35.6839-33.889Zm11.6999,76.2859h-42.3976c-9.4155,0-10.6229-4.7181-10.6229-8.8273,0-5.083,1.8676-8.469,10.9819-8.469h42.0386v17.2963Z"
+                                            style="fill:#24374a; stroke-width:0px;" />
+                                        <rect x="1076.3296" y="53.2088" width="24.343" height="141.179"
+                                            style="fill:#24374a; stroke-width:0px;" />
+                                        <path
+                                            d="m115.6268,83.4543c-2.0866-11.3637-12.421-19.5961-23.9638-19.0904-10.715.4696-19.9757,8.4137-21.9918,18.9636-1.1281,5.8968-.5957,11.4674-1.9626,17.5237-2.9661,13.122-11.7641,24.8317-21.0836,32.9848-9.3181,8.1489-19.1818,9.7019-28.9366,13.36-11.677,4.3826-22.4016,6.4946-15.5316,28.8769,5.1922,16.9136,10.5477,17.5056,20.6912,19.0888l28.4554,4.4447s-12.0183-16.7118-14.4756-27.6081c-4.9388-21.8867,15.7988-36.7812,26.6083-44.0487,10.8055-7.269,24.8808-13.7848,30.2407-15.5346,5.3804-1.7567,12.6674-4.8631,16.5254-9.257,4.705-5.3589,6.7095-12.6894,5.4246-19.7036Zm-15.1723,12.3728c-3.6206,3.5231-9.3095,4.1676-13.6258,1.5428-6.3354-3.8601-7.3204-12.5681-2.0108-17.7394,3.6219-3.5272,9.3108-4.1716,13.6258-1.5428,6.3368,3.8559,7.3217,12.5641,2.0108,17.7394Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                        <path
+                                            d="m43.1084,114.1044c0,6.9312-5.6189,12.5501-12.5501,12.5501s-12.5501-5.6189-12.5501-12.5501,12.5501-38.3451,12.5501-38.3451c0,0,12.5501,31.4138,12.5501,38.3451Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                        <path
+                                            d="m182.8294,86.3948c8.798-7.4889,10.7602-20.5549,4.5509-30.2984-5.7642-9.0447-17.2743-13.0926-27.4188-9.5636-5.6708,1.9714-10.2289,5.2178-16.1572,7.0622-12.8471,3.9923-27.3869,2.2278-39.1075-1.7666-11.7163-3.9953-17.993-11.761-26.0384-18.3799-9.6339-7.9213-16.8253-16.1531-32.7739.9877-12.0515,12.9534-9.8865,17.8873-6.1858,27.4635l10.3785,26.8655s8.4636-18.7641,16.6715-26.3403c16.485-15.2204,39.7529-4.7085,51.4514,1.0191,11.6979,5.7233,24.3784,14.6549,28.5737,18.4219,4.2115,3.7812,10.5452,8.5388,16.2795,9.6829,6.9935,1.3952,14.3441-.5341,19.7761-5.154Zm-18.3013-6.9531c-4.8614-1.3739-8.264-5.9785-8.149-11.029.1752-7.4167,7.2241-12.6237,14.3574-10.6111,4.8655,1.373,8.2681,5.9776,8.149,11.029-.1709,7.4157-7.22,12.6229-14.3574,10.6111Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                        <path
+                                            d="m120.0264,38.9171c-6.0026,3.4656-13.6782,1.409-17.1438-4.5937-3.4656-6.0026-1.409-13.6782,4.5937-17.1438,6.0026-3.4656,39.4829-8.3038,39.4829-8.3038,0,0-20.9301,26.5756-26.9327,30.0413Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                        <path
+                                            d="m213.8841,146.0643c10.8845,3.8748,23.1812-.9588,28.5146-11.208,4.9508-9.5143,2.7014-21.5063-5.4271-28.5272-4.5427-3.9254-9.6332-6.2496-14.1946-10.4615-9.8809-9.1298-15.6228-22.6039-18.0239-34.7514-2.3981-12.1442,1.1888-21.4629,2.8982-31.7398,2.0431-12.3038,5.5763-22.6477-17.2423-27.8892-17.2437-3.9602-20.4341.3817-26.877,8.3747l-18.0769,22.4208s20.482-2.0523,31.1471,1.2678c21.4238,6.6663,23.9541,32.0727,24.8432,45.0678.8925,12.9923-.5024,28.4398-1.667,33.9565-1.1689,5.5379-2.1222,13.4018-.2459,18.9399,2.2884,6.7541,7.6346,12.1553,14.3515,14.5496Zm-3.1291-19.326c-1.2408-4.8971,1.0455-10.1461,5.4769-12.5717,6.5106-3.5566,14.5445-.0556,16.3682,7.1283,1.2437,4.9002-1.0427,10.1492-5.4769,12.5717-6.5077,3.5599-14.5417.0587-16.3682-7.1283Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                        <path
+                                            d="m223.5995,67.9364c-6.0026-3.4656-8.0593-11.1412-4.5937-17.1438,3.4656-6.0026,11.1412-8.0593,17.1438-4.5937,6.0026,3.4656,26.9327,30.0413,26.9327,30.0413,0,0-33.4802-4.8382-39.4829-8.3038Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                        <path
+                                            d="m177.7362,202.7931c2.0866,11.3637,12.421,19.5961,23.9638,19.0904,10.715-.4696,19.9757-8.4137,21.9918-18.9636,1.1281-5.8968.5957-11.4674,1.9626-17.5237,2.9661-13.122,11.7641-24.8317,21.0836-32.9848,9.3181-8.1489,19.1818-9.7019,28.9366-13.36,11.677-4.3826,22.4016-6.4946,15.5316-28.8769-5.1922-16.9136-10.5477-17.5056-20.6912-19.0888l-28.4554-4.4447s12.0183,16.7118,14.4756,27.6081c4.9388,21.8867-15.7988,36.7812-26.6083,44.0487-10.8055,7.269-24.8808,13.7848-30.2407,15.5346-5.3804,1.7567-12.6674,4.8631-16.5254,9.257-4.705,5.3589-6.7095,12.6894-5.4246,19.7036Zm15.1723-12.3728c3.6206-3.5231,9.3095-4.1676,13.6258-1.5428,6.3354,3.8601,7.3204,12.5681,2.0108,17.7394-3.6219,3.5272-9.3108,4.1716-13.6258,1.5428-6.3368-3.8559-7.3217-12.5641-2.0108-17.7394Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                        <path
+                                            d="m250.2546,172.143c0-6.9312,5.6189-12.5501,12.5501-12.5501s12.5501,5.6189,12.5501,12.5501-12.5501,38.3451-12.5501,38.3451c0,0-12.5501-31.4138-12.5501-38.3451Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                        <path
+                                            d="m110.5336,199.8526c-8.798,7.4889-10.7602,20.5549-4.5509,30.2984,5.7642,9.0447,17.2743,13.0926,27.4188,9.5636,5.6708-1.9714,10.2289-5.2178,16.1572-7.0622,12.8471-3.9923,27.3869-2.2278,39.1075,1.7666,11.7163,3.9953,17.993,11.761,26.0384,18.3799,9.6339,7.9213,16.8253,16.1531,32.7739-.9877,12.0515-12.9534,9.8865-17.8873,6.1858-27.4635l-10.3785-26.8655s-8.4636,18.7641-16.6715,26.3403c-16.485,15.2204-39.7529,4.7085-51.4514-1.0191-11.6979-5.7233-24.3784-14.6549-28.5737-18.4219-4.2115-3.7812-10.5452-8.5388-16.2795-9.6829-6.9935-1.3952-14.3441.5341-19.7761,5.154Zm18.3013,6.9531c4.8614,1.3739,8.264,5.9785,8.149,11.029-.1752,7.4167-7.2241,12.6237-14.3574,10.6111-4.8655-1.373-8.2681-5.9776-8.149-11.029.1709-7.4157,7.22-12.6229,14.3574-10.6111Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                        <path
+                                            d="m173.3366,247.3303c6.0026-3.4656,13.6782-1.409,17.1438,4.5937,3.4656,6.0026,1.409,13.6782-4.5937,17.1438-6.0026,3.4656-39.4829,8.3038-39.4829,8.3038,0,0,20.9301-26.5756,26.9327-30.0413Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                        <path
+                                            d="m79.4789,140.1831c-10.8845-3.8748-23.1812.9588-28.5146,11.208-4.9508,9.5143-2.7014,21.5063,5.4271,28.5272,4.5427,3.9254,9.6332,6.2496,14.1946,10.4615,9.8809,9.1298,15.6228,22.6039,18.0239,34.7514,2.3981,12.1442-1.1888,21.4629-2.8982,31.7398-2.0431,12.3038-5.5763,22.6477,17.2423,27.8892,17.2437,3.9602,20.4341-.3817,26.877-8.3747l18.0769-22.4208s-20.482,2.0523-31.1471-1.2678c-21.4238-6.6663-23.9541-32.0727-24.8432-45.0678-.8925-12.9923.5024-28.4398,1.667-33.9565,1.1689-5.5379,2.1222-13.4018.2459-18.9399-2.2884-6.7541-7.6346-12.1553-14.3515-14.5496Zm3.1291,19.326c1.2408,4.8971-1.0455,10.1461-5.4769,12.5717-6.5106,3.5566-14.5445.0556-16.3682-7.1283-1.2437-4.9002,1.0427-10.1492,5.4769-12.5717,6.5077-3.5599,14.5417-.0587,16.3682,7.1283Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                        <path
+                                            d="m69.7635,218.311c6.0026,3.4656,8.0593,11.1412,4.5937,17.1438-3.4656,6.0026-11.1412,8.0593-17.1438,4.5937-6.0026-3.4656-26.9327-30.0413-26.9327-30.0413,0,0,33.4802,4.8382,39.4829,8.3038Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                        <path
+                                            d="m115.6268,83.4543c-2.0866-11.3637-12.421-19.5961-23.9638-19.0904-10.715.4696-19.9757,8.4137-21.9918,18.9636-1.1281,5.8968-.5957,11.4674-1.9626,17.5237-2.9661,13.122-11.7641,24.8317-21.0836,32.9848-9.3181,8.1489-19.1818,9.7019-28.9366,13.36-11.677,4.3826-22.4016,6.4946-15.5316,28.8769,5.1922,16.9136,10.5477,17.5056,20.6912,19.0888l28.4554,4.4447s-12.0183-16.7118-14.4756-27.6081c-4.9388-21.8867,15.7988-36.7812,26.6083-44.0487,10.8055-7.269,24.8808-13.7848,30.2407-15.5346,5.3804-1.7567,12.6674-4.8631,16.5254-9.257,4.705-5.3589,6.7095-12.6894,5.4246-19.7036Zm-15.1723,12.3728c-3.6206,3.5231-9.3095,4.1676-13.6258,1.5428-6.3354-3.8601-7.3204-12.5681-2.0108-17.7394,3.6219-3.5272,9.3108-4.1716,13.6258-1.5428,6.3368,3.8559,7.3217,12.5641,2.0108,17.7394Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                        <path
+                                            d="m43.1084,114.1044c0,6.9312-5.6189,12.5501-12.5501,12.5501s-12.5501-5.6189-12.5501-12.5501,12.5501-38.3451,12.5501-38.3451c0,0,12.5501,31.4138,12.5501,38.3451Z"
+                                            style="fill:#f3bd44; stroke-width:0px;" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col gap-4 max-md:order-3 md:w-2/4">
+                            <p class="text-lg md:text-xl font-semibold text-gray-900">Full Stack Developer</p>
+                            <ul class="flex list-disc flex-col gap-2 md:gap-1">
+                                <li class="text-normal text-base">Utilized Vue.js and Bootstrap for building responsive
+                                    and dynamic front-end applications.
+                                </li>
+                                <li class="text-normal text-base">Implemented Server-Side Rendering (SSR) using the
+                                    Pebble Template Engine and HTMXto this
+                                    .</li>
+                                <li class="text-normal text-base">Worked with the Javalin framework for building RESTful
+                                    APIs, using PostgreSQL as the database.
+                                </li>
+                                <li class="text-normal text-base">Leveraged tools like Flyway for database migrations
+                                    and Google Guice for dependency injection.
+                                </li>
+                                <li class="text-normal text-base">Integrated Leaflet.js to create customized equipment
+                                    maps, enabling advanced map-based features.
+                                </li>
+                                <li class="text-normal text-base">Used EasyBus for asynchronous communication between
+                                    services, ensuring efficient and scalable interactions.
+                                </li>
+                                <li class="text-normal text-base">Built dashboards with ECharts for Java to visualize
+                                    data in an interactive and user-friendly manner.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="max-md:order-2 md:w-1/4">
+                            <p class="text-base text-gray-700 md:text-right">May 2022<!-- --> <!-- -->-<!-- -->
+                                <!-- -->Dec 2024
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-xl bg-gray shadow-md bg-white mx-auto flex w-full max-w-4xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
+                        <div class="max-md:order-1 md:w-1/4"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 189.8 94.7"
+                                xml:space="preserve">
+                                <path fill="red" d="M166,61.2c1.3,1.1,3.2,1,4.4-0.3c1.1-1.3,1-3.2-0.3-4.4c-1.3-1.1-3.2-1-4.4,0.3c0,0,0,0,0,0
+                                c-0.1,0.1-0.2,0.2-0.3,0.4C164.5,58.4,164.8,60.2,166,61.2 M105,61.2c1.3,1.1,3.2,1,4.4-0.3c1.1-1.3,1-3.2-0.3-4.4s-3.2-1-4.4,0.3
+                                c0,0,0,0,0,0c-0.1,0.1-0.2,0.2-0.3,0.4C103.5,58.4,103.8,60.2,105,61.2 M184.8,81.6c-2.3,1.2-5,1.4-7.5,0.7c3.4-1.7,6.6-3.7,9.6-6
+                                c1.3-1,3.3-3,2.9-5.7c-0.3-2-2-3.6-4.4-4.4c-3.8-1.2-8-0.2-10.9,2.6c-3.1,3-5.7,8.3-4.7,12.4c-1.1,0.8-2.3,1.4-3.6,1.7
+                                c-0.2,0-0.5,0.1-0.8,0.1h0c-0.1,0-0.2,0-0.4,0h-0.3c-0.4,0-0.8-0.1-1.2-0.2c-0.2-0.1-0.4-0.2-0.6-0.3c-0.5-0.5-0.8-1.2-0.7-1.9
+                                c0-0.1,0-0.3,0.1-0.4l4.8-12.4c0.4-1.1-0.2-2.4-1.3-2.8c-1.1-0.4-2.3,0.1-2.8,1.2v0l-5.4,13.9c0,0.1-0.1,0.2-0.1,0.4
+                                c-0.7,1.5-2.2,2.5-3.9,2.5c-0.9,0.1-1.8-0.3-2.4-1.1c-0.1-0.1-0.2-0.3-0.2-0.4c-0.1-0.2-0.1-0.4-0.2-0.6l9.8-25.7
+                                c0.4-1.1-0.1-2.4-1.2-2.8s-2.4,0.1-2.8,1.2c0,0,0,0,0,0.1l0,0l-5.9,15.5c-0.1,0.1-0.1,0.2-0.2,0.3c-0.3-0.4-0.6-0.9-0.9-1.3
+                                c-0.4-0.4-0.7-0.8-1.1-1.1c-1.8-1.5-4.1-2.2-6.4-2.2c-3,0-5.9,1.2-8.1,3.2c-0.1,0.1-0.2,0.2-0.2,0.2c-0.1,0-0.1,0.1-0.2,0.2
+                                c-1.5,1.4-2.6,3.1-3.3,5c0,0,0,0,0,0.1c-0.1,0.2-0.2,0.5-0.2,0.8c-0.1,0.5-0.2,0.9-0.3,1.4c-0.1,0.4-0.1,0.9-0.1,1.3
+                                c0,1.3,0.1,2.5,0.6,3.7c-0.2,0.3-0.5,0.7-0.8,0.9c-0.8,0.8-1.9,1.3-3.1,1.4h-0.3c-0.4,0-0.8-0.1-1.2-0.2c-0.5-0.2-0.8-0.5-1.1-0.8
+                                c-0.5-0.9-0.5-2.1,0-3c0.1-0.3,0.8-2.2,1.5-3.9c0.5-1.3,0.9-2.5,1-2.8c0-0.1,0.1-0.3,0.2-0.6c0.2-0.6,0.1-1.2-0.1-1.8
+                                c-0.1-0.2-0.3-0.5-0.5-0.7c-0.4-0.3-0.8-0.6-1.3-0.8c-0.2-0.1-0.4-0.1-0.5-0.2c-0.3-0.1-0.7-0.2-1-0.4c0,0,0,0,0,0
+                                c-0.6-0.3-3.6-1.7-3.6-4.3v-0.3c0-0.3-0.1-0.6-0.4-0.8c0,0,0,0,0,0h0c0,0,0,0-0.1,0h0c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.4-0.1h-2
+                                c-0.5,0-0.9,0.2-1.2,0.6c-0.1,0.1-0.2,0.3-0.3,0.5c-0.4,1.1-1,2.5-1.5,3.9c-2,5-4.3,11.1-5,12.8l-0.1,0.2c-0.6,1.8-2.2,2.9-4.1,2.9
+                                c-0.9,0.1-1.8-0.3-2.4-1.1c-0.3-0.5-0.4-1-0.4-1.5c0-0.5,0.1-1,0.3-1.5c0.4-1.1,1.3-3.4,2.3-5.9c0.9-2.3,1.9-4.8,2.5-6.5
+                                c0.2-0.3,0.1-0.8-0.3-1c-0.1-0.1-0.3-0.1-0.4-0.1h-2.3c-0.2,0-0.3,0-0.4,0.1h0c-0.5,0.1-0.9,0.4-1.3,0.8c-1.1,1.3-2.4,2.3-4,3.1
+                                c-1.5,0.7-3.1,1.2-4.7,1.4c-0.2-0.6-0.5-1.2-0.9-1.7c0,0,0,0,0-0.1c-1.8-2.8-4.9-4.4-8.2-4.3c-1.6,0-3.2,0.4-4.7,1l4.1-10.7
+                                c0.4-1.1-0.1-2.4-1.2-2.8s-2.4,0.1-2.8,1.2c0,0,0,0,0,0.1l0,0l-9.6,25.1c-0.7,1.7-1.5,3.4-2.6,4.9c-0.1,0.1-0.2,0.3-0.3,0.4
+                                c-0.7,1-0.5,2.3,0.4,3c1,0.7,2.3,0.5,3-0.4l0,0c0.1-0.2,0.2-0.3,0.3-0.5c0.8-1.1,1.5-2.3,2.1-3.5v0c0.1-0.1,0.1-0.2,0.2-0.3
+                                c0.1,0.1,0.1,0.2,0.2,0.3l0.3,0.4c0.1,0.2,0.3,0.3,0.4,0.5c1.9,2.2,4.6,3.4,7.5,3.3c4.2-0.1,8-2.2,10.4-5.6c1.1-1.5,1.8-3.3,2.1-5.1
+                                c0.1-0.5,0.1-0.9,0.1-1.4c0.4,0,0.8-0.1,1.2-0.2c1.7-0.3,3.3-0.9,4.7-1.6c0,0.1-0.1,0.2-0.1,0.4c-0.7,1.8-1.3,3.3-1.6,4.1
+                                c-1,2.2-0.8,4.7,0.4,6.7c0.5,0.7,1.1,1.3,1.8,1.7c1.2,0.7,2.5,1.1,3.9,1.1c3.5,0,6.6-2.2,7.8-5.5c0.2-0.4,0.5-1.4,1-2.6
+                                c1-2.5,2.4-6.3,3.8-9.7c0.1-0.3,0.2-0.6,0.4-0.9c1.1,1.4,2.6,2.5,4.2,3.2c0.1,0,0.2,0.1,0.2,0.1c0.2,0.1,0.4,0.1,0.5,0.2
+                                c-0.8,2-2,5.3-2.1,5.7c-0.6,1.4-0.8,2.9-0.5,4.4c0.2,0.8,0.5,1.6,1,2.4c1.2,1.7,3.1,2.8,5.2,2.8c0.2,0,0.3,0,0.4,0
+                                c0.2,0,0.5,0,0.7,0c0.1,0,0.1,0,0.2,0h0.1c1-0.1,2-0.4,2.9-0.9c0.9-0.5,1.8-1.1,2.5-1.8c1.4,1.4,3.3,2.3,5.2,2.6
+                                c0.6,0.1,1.2,0.1,1.7,0.1c2.9,0,5.6-1,7.8-2.9c0.2-0.1,0.3-0.2,0.4-0.4c0.1,0.2,0.2,0.3,0.3,0.4c0.8,1.1,1.9,2,3.2,2.4
+                                c0.1,0,0.1,0,0.2,0.1c0.1,0,0.2,0,0.2,0.1c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0c0.1,0,0.1,0,0.2,0
+                                c0.1,0,0.2,0,0.2,0c0.1,0,0.2,0,0.3,0c0.1,0,0.1,0,0.2,0c0.2,0,0.3,0,0.5,0c2.2,0,4.3-0.8,5.9-2.4c0.2,0.3,0.5,0.5,0.7,0.7
+                                c1.2,1,2.6,1.6,4.2,1.6c0.2,0,0.3,0,0.4,0c0.2,0,0.5,0,0.7,0c0.1,0,0.1,0,0.2,0h0.1c0.4,0,0.9-0.1,1.3-0.2l0,0l0.2-0.1
+                                c0.3-0.1,0.5-0.2,0.8-0.3c0.9-0.3,2.3-0.9,4-1.6c0,0,0.2,0,0.4,0c2.3,1.5,5,2.2,7.8,2.2c2.3,0,4.5-0.5,6.6-1.5
+                                c1.1-0.5,1.6-1.8,1-2.9C187.2,81.5,185.9,81.1,184.8,81.6 M88.8,75.6c-0.6,4.1-4,7.2-8.1,7.4c-0.5,0-1-0.1-1.5-0.2
+                                c-1.1-0.3-2-0.9-2.7-1.7c-1.1-1.4-1.5-3.1-1.2-4.8v0c0-0.3,0.1-0.6,0.2-0.9l0.6-1.7c0,0,0,0,0-0.1c0.1-0.1,0.1-0.2,0.2-0.3
+                                c0,0,0-0.1,0.1-0.1c0.5-0.8,1.1-1.5,1.8-2.2c1.4-1.3,3.3-2.1,5.2-2.1c0.8,0,1.6,0.2,2.4,0.5c0.7,0.3,1.4,0.8,1.9,1.4
+                                C88.7,72.1,89.2,73.9,88.8,75.6 M147.6,75.6c-0.4,2.6-2,4.9-4.2,6.3c0,0-0.1,0-0.1,0c0,0,0,0,0,0v0c-1.1,0.7-2.5,1-3.8,1
+                                c-0.6,0-1.2-0.1-1.8-0.3c-1-0.3-1.8-0.9-2.5-1.6c-0.7-0.8-1.1-1.8-1.2-2.8v0c-0.1-0.7-0.1-1.3,0-2c0.2-1,0.5-2,1-2.9
+                                c0.7-1.2,1.6-2.2,2.7-3c1.3-0.9,2.8-1.4,4.4-1.5c1,0,2,0.2,2.9,0.7c0.5,0.3,1,0.7,1.4,1.2c0.2,0.2,0.4,0.5,0.5,0.8
+                                c0.5,0.9,0.8,2,0.8,3.1C147.7,74.9,147.7,75.3,147.6,75.6 M177.2,71.8c1.3-1.3,3-2,4.9-2c0.6,0,1.3,0.1,1.9,0.3
+                                c1,0.3,1.6,0.8,1.6,1.2c0.1,0.3-0.3,1-1.3,1.8c-3.4,2.5-7,4.7-10.7,6.4C173.5,77.4,174.7,74.2,177.2,71.8 M44.2,71.7
+                                c2.6-4.3,3-9.6,1-15.8l8.5-2.6c1.1-0.3,1.8-1.6,1.4-2.7c-0.1-0.2-0.2-0.4-0.3-0.6c-0.3-0.4-6.7-9.2-14.8-9.4
+                                c-4-0.1-7.6,1.8-10.7,5.7c-0.8,0.9-0.6,2.3,0.3,3.1c0.9,0.8,2.3,0.6,3.1-0.3l0,0c2.2-2.8,4.6-4.1,7.2-4.1c3.7,0.1,7.2,3,9.4,5.2
+                                l-7.6,2.3c-1.1,0.3-1.8,1.6-1.4,2.7c0,0,0,0,0,0c0,0.1,0,0.1,0.1,0.2c2.3,5.8,2.3,10.5,0.1,14.2C36.7,75.8,27,77,26.7,77
+                                c-3.4,0.4-6.8,1.2-10.1,2.4c-7.3,2.6-13,6.8-16.3,11.9c-0.6,1-0.4,2.4,0.7,3c1,0.6,2.4,0.4,3-0.7l0,0c6.8-10.7,23-12.4,23.2-12.4h0
+                                C27.7,81.3,39.2,80,44.2,71.7 M34.8,28.7c-1.3,0-2.5,0.1-3.8,0.2c2.1-9.1,1.5-18.6-1.6-27.5C29.3,1.2,29.2,1,29,0.8
+                                c0,0-0.1-0.1-0.1-0.1c0,0,0,0,0,0c0,0-0.1-0.1-0.1-0.1c0,0-0.1-0.1-0.1-0.1c0,0,0,0-0.1-0.1c0,0-0.1-0.1-0.1-0.1l0,0
+                                c0,0-0.1-0.1-0.1-0.1l-0.1,0c0,0-0.1,0-0.1-0.1l-0.1,0c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0s-0.1,0-0.1,0l-0.1,0
+                                c0,0-0.1,0-0.1,0h-0.2l-0.1,0c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0s-0.1,0-0.1,0c0,0,0,0-0.1,0c0,0-0.1,0-0.1,0.1
+                                c-0.2,0.1-0.4,0.2-0.6,0.4c-4.8,4.5-8.7,9.8-11.3,15.8c-0.5,1.1,0,2.4,1.1,2.9c1.1,0.5,2.4,0,2.9-1.1c2-4.4,4.6-8.4,7.9-11.9
+                                c2,7.3,2.1,15,0.3,22.4c-0.1,0.4-0.2,0.9-0.3,1.3C13.8,33.7,5.3,45.1,5.3,58.1v0c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1
+                                c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0,0,0.1,0.1,0.1l0,0.1c0,0,0,0.1,0.1,0.1l0,0c0,0,0,0,0,0.1s0,0,0,0.1l0.1,0.1
+                                c0.1,0.1,0.2,0.3,0.4,0.4l0,0c0,0,0.1,0.1,0.2,0.1c0.2,0.1,0.3,0.2,0.5,0.3l0,0c0.1,0,0.1,0,0.2,0l0,0c0.5,0.1,1.1,0,1.5-0.3
+                                c10-6,17.4-15.4,21.1-26.5c13.6-2.8,26.9,6,29.6,19.5s-6,26.9-19.5,29.6c-1.7,0.3-3.3,0.5-5,0.5c-1.2,0-2.2,1-2.2,2.2
+                                c0,1.2,1,2.2,2.2,2.2c16.3,0,29.4-13.2,29.4-29.5C64.2,41.9,51,28.7,34.8,28.7 M10,53.8c1.4-8.2,6.8-15.1,14.4-18.5
+                                C21.4,42.6,16.4,49,10,53.8 M27.8,70c1,0.7,2.3,0.4,3-0.6c2.2-3.4,3-6.5,2.2-9.4c-0.6-2.3-2.1-4.2-4.1-5.4c-0.5-0.3-1.1-0.3-1.6-0.2
+                                c-5.4,1.6-14.1,11.8-15,13c-0.8,0.9-0.6,2.3,0.3,3.1c0.9,0.8,2.3,0.6,3.1-0.3l0,0c3-3.6,8.6-9.5,12-11.2c0.6,0.6,1,1.3,1.2,2.1
+                                c0.4,1.6-0.2,3.6-1.7,5.9C26.5,68,26.8,69.3,27.8,70"></path>
+                            </svg></div>
+                        <div class="flex flex-col gap-4 max-md:order-3 md:w-2/4">
+                            <p class="text-lg md:text-xl font-semibold text-gray-900">Frontend Developer</p>
+                            <ul class="flex list-disc flex-col gap-2 md:gap-1">
+                                <li class="text-normal text-base">Utilized Vue.js framework and TailwindCSS to develop
+                                    the Birde website, ensuring a responsive design for seamless user experiences across
+                                    devices.
+                                </li>
+                                <li class="text-normal text-base">Contributed to the Iraq Pass project, applying modern
+                                    frontend development practices to deliver high-quality solutions.</li>
+
+                                <li class="text-normal text-base"> Gained hands-on experience in creating efficient and
+                                    maintainable code while
+                                    collaborating with cross-functional teams to meet project goals.
+                                    .</li>
+
+
+
+
+
+
+
+
+                            </ul>
+                        </div>
+                        <div class="max-md:order-2 md:w-1/4">
+                            <p class="text-base text-gray-700 md:text-right">Jan 2022<!-- --> <!-- -->-<!-- -->
+                                <!-- -->May 2022
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-xl bg-gray shadow-md bg-white mx-auto flex w-full max-w-4xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
+                        <div class="max-md:order-1 md:w-1/4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 813.313 152.314"
+                                class="sc-grXZZQ dPEjR">
+                                <g id="Group_1" data-name="Group 1" transform="translate(-112.246 -236.172)">
+                                    <path id="Path_1" data-name="Path 1"
+                                        d="M198.984,249.147l7.358-12.976h48l.027.04h58.477l7.469,12.935H198.984Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_2" data-name="Path 2"
+                                        d="M306.231,310.991l-142.989-.027,7.385-12.935H348.541l7.469,12.935h-49.8Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_3" data-name="Path 3"
+                                        d="M290.488,295.7l-164.742-.036,7.474-12.944,149.741-.058Z" fill="#ffd100">
+                                    </path>
+                                    <path id="Path_4" data-name="Path 4"
+                                        d="M164.264,329.036H354.9l-7.474,12.944-175.674.032Z" fill="#ffd100"></path>
+                                    <path id="Path_5" data-name="Path 5"
+                                        d="M303.963,319.044l-4.233,7.336H116.484l-4.238-7.336,3.236-5.6h185.3Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_6" data-name="Path 6"
+                                        d="M182.2,360.1l154.758.031-7.483,12.958-139.752.04Z" fill="#ffd100"></path>
+                                    <path id="Path_7" data-name="Path 7"
+                                        d="M289.17,344.449,281.8,357.384H133.357l-7.042-12.935Z" fill="#ffd100"></path>
+                                    <path id="Path_8" data-name="Path 8"
+                                        d="M284.352,280.263H180.886l7.5-12.989h88.024l.027.04h54.368l7.469,12.935H284.343Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_9" data-name="Path 9"
+                                        d="M178.733,251.55h86.261l7.42,13.011H143.7l7.469-12.935h27.522Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_10" data-name="Path 10"
+                                        d="M263.872,388.485H150.288l-6.926-12.935H271.341Z" fill="#ffd100"></path>
+                                    <path id="Path_11" data-name="Path 11"
+                                        d="M418.449,363.6v5.879h-12.2V387.76h-7.111V369.475h-12.2V363.6Z"
+                                        fill="#ffd100">
+                                    </path>
+                                    <path id="Path_12" data-name="Path 12"
+                                        d="M464.273,363.6v5.879H441.644v3.213h19.621v5.776H441.644v3.412h22.629v5.884H434.5V363.6Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_13" data-name="Path 13"
+                                        d="M506.1,363.6a8.053,8.053,0,0,1,5.617,2.1,6.4,6.4,0,0,1,2.3,5.1v1.816h-7.131V371.9a2.2,2.2,0,0,0-.788-1.719,2.583,2.583,0,0,0-1.878-.706H490.121a2.683,2.683,0,0,0-1.893.706,2.2,2.2,0,0,0-.773,1.719v7.557a2.263,2.263,0,0,0,.788,1.714,3.117,3.117,0,0,0,1.878.706h14.105a3.012,3.012,0,0,0,1.9-.706,2.192,2.192,0,0,0,.768-1.714v-.691h7.131v1.822a6.482,6.482,0,0,1-2.322,5.09,7.959,7.959,0,0,1-5.6,2.082H488.243a8.125,8.125,0,0,1-5.618-2.1,6.62,6.62,0,0,1-2.3-5.07v-9.8a6.911,6.911,0,0,1,2.318-5.1,8.164,8.164,0,0,1,5.6-2.1Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_14" data-name="Path 14"
+                                        d="M537.244,363.6v8.8h18.306v-8.8h7.112V387.76h-7.112v-9.475H537.244v9.475h-7.106V363.6Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_15" data-name="Path 15"
+                                        d="M585.622,363.6,605.5,379.7V363.6h7.132V387.76H605.7l-19.856-16.106V387.76h-7.132V363.6Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_16" data-name="Path 16"
+                                        d="M654.989,363.6a8.022,8.022,0,0,1,5.618,2.1,6.385,6.385,0,0,1,2.3,5.091v9.8a6.5,6.5,0,0,1-2.322,5.09,7.965,7.965,0,0,1-5.6,2.077h-18.4a8.169,8.169,0,0,1-5.6-2.1,6.646,6.646,0,0,1-2.3-5.07v-9.8a6.9,6.9,0,0,1,2.323-5.091,8.109,8.109,0,0,1,5.577-2.1Zm-18.4,6.584a2.194,2.194,0,0,0-.768,1.719v7.552a2.273,2.273,0,0,0,.783,1.718,3.2,3.2,0,0,0,1.883.707h14.627a3.059,3.059,0,0,0,1.9-.707,2.2,2.2,0,0,0,.767-1.718V371.9a2.178,2.178,0,0,0-.788-1.719,2.539,2.539,0,0,0-1.877-.706H638.485a2.652,2.652,0,0,0-1.9.706"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_17" data-name="Path 17"
+                                        d="M686.169,363.6v18.28h21.437v5.884H679.021V363.6Z" fill="#ffd100"></path>
+                                    <path id="Path_18" data-name="Path 18"
+                                        d="M749.958,363.6a8.021,8.021,0,0,1,5.617,2.1,6.385,6.385,0,0,1,2.3,5.091v9.8a6.494,6.494,0,0,1-2.322,5.09,7.964,7.964,0,0,1-5.6,2.077h-18.4a8.165,8.165,0,0,1-5.6-2.1,6.644,6.644,0,0,1-2.3-5.07v-9.8a6.9,6.9,0,0,1,2.323-5.091,8.109,8.109,0,0,1,5.577-2.1Zm-18.4,6.584a2.194,2.194,0,0,0-.768,1.719v7.552a2.261,2.261,0,0,0,.788,1.718,3.169,3.169,0,0,0,1.878.707H748.08a3.059,3.059,0,0,0,1.9-.707,2.207,2.207,0,0,0,.768-1.718V371.9a2.181,2.181,0,0,0-.788-1.719,2.543,2.543,0,0,0-1.878-.706H733.453a2.652,2.652,0,0,0-1.9.706"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_19" data-name="Path 19"
+                                        d="M807.388,363.6v5.878h-23.6a2.7,2.7,0,0,0-1.893.706,2.2,2.2,0,0,0-.772,1.719v7.557a2.263,2.263,0,0,0,.788,1.714,3.117,3.117,0,0,0,1.877.706h17.3v-3.009h-8.022v-5.612h15.154v14.5H781.91a8.133,8.133,0,0,1-5.618-2.1,6.617,6.617,0,0,1-2.3-5.07v-9.8a6.925,6.925,0,0,1,2.318-5.1,8.162,8.162,0,0,1,5.6-2.1Z"
+                                        fill="#ffd100"></path>
+                                    <rect id="Rectangle_1" data-name="Rectangle 1" width="7.106" height="24.164"
+                                        transform="translate(824.266 363.595)" fill="#ffd100"></rect>
+                                    <path id="Path_20" data-name="Path 20"
+                                        d="M877.2,363.6v5.879H854.572v3.213h19.621v5.776H854.572v3.412H877.2v5.884H847.424V363.6Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_21" data-name="Path 21"
+                                        d="M901.435,363.6h14.99a8.152,8.152,0,0,1,5.736,2.179,6.78,6.78,0,0,1,2.384,5.234v.143H917.6v-.143a1.211,1.211,0,0,0-.466-1.049,1.667,1.667,0,0,0-1.171-.445l-13.353.021a1.717,1.717,0,0,0-1.172.445,1.329,1.329,0,0,0-.466,1.048,1.454,1.454,0,0,0,.481,1.07,1.7,1.7,0,0,0,1.157.424q2.363,0,7.311-.02c3.3-.041,5.73-.041,7.295,0a8.386,8.386,0,0,1,5.9,2.246,7.167,7.167,0,0,1,0,10.785,8.413,8.413,0,0,1-5.9,2.225H901.594a8.456,8.456,0,0,1-5.9-2.225,7.063,7.063,0,0,1-2.441-5.393v-.123h6.728v.164a1.787,1.787,0,0,0,.563,1.254,1.978,1.978,0,0,0,1.356.5h14.7a2.022,2.022,0,0,0,1.377-.5,1.556,1.556,0,0,0,.547-1.233,1.653,1.653,0,0,0-.568-1.254,1.624,1.624,0,0,0-1.356-.506H901.45a8.33,8.33,0,0,1-5.755-2.18,7,7,0,0,1-2.385-5.254,6.7,6.7,0,0,1,2.344-5.152,8.659,8.659,0,0,1,5.679-2.261h.1Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_22" data-name="Path 22"
+                                        d="M469.87,236.9l58.1,91.488H501.058l-12.621-20.035H426.531l-12.755,20.035H386.932l58.1-91.488Zm-31.05,52.088h37.261L457.52,259.6Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_23" data-name="Path 23"
+                                        d="M624.734,236.9a30.337,30.337,0,0,1,21.37,8.078,25.6,25.6,0,0,1,8.815,19.57v.4H630.612c.133-.266.153-.4.066-.4a6.4,6.4,0,0,0-2.271-5.009,6.792,6.792,0,0,0-5.541-2.006H570.845a6.824,6.824,0,0,0-5.48,2.073,6.413,6.413,0,0,0-2.2,4.942,6.84,6.84,0,0,0,2.267,5.009,7.623,7.623,0,0,0,5.413,2.067q9.209,0,28.446-.067,19.231-.2,28.379,0a30.87,30.87,0,0,1,22.041,8.35q9.277,8.28,9.081,20.1.062,11.818-9.148,20.1-8.947,8.287-21.974,8.282H567.1a31.836,31.836,0,0,1-22.041-8.282,26.208,26.208,0,0,1-9.081-20.1h23.376v.133a7.537,7.537,0,0,0,2.6,5.741,8.824,8.824,0,0,0,6.206,2.4h57.163a10.272,10.272,0,0,0,6.278-2.338,7.558,7.558,0,0,0,2.537-5.674,7.412,7.412,0,0,0-2.6-5.745,8.847,8.847,0,0,0-6.211-2.4H566.368A30.885,30.885,0,0,1,545,284.044q-8.811-8.151-8.815-19.5a24.781,24.781,0,0,1,8.815-19.3,32.215,32.215,0,0,1,21.37-8.349Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_24" data-name="Path 24"
+                                        d="M749.942,236.9l58.1,91.488H781.131l-12.622-20.035H706.6l-12.754,20.035H667L725.1,236.9Zm-31.05,52.088h37.261L737.592,259.6Z"
+                                        fill="#ffd100"></path>
+                                    <path id="Path_25" data-name="Path 25"
+                                        d="M817.31,328.385V236.9h24.977v71.12h83.271v20.367Z" fill="#ffd100"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col gap-4 max-md:order-3 md:w-2/4">
+                            <p class="text-lg md:text-xl font-semibold text-gray-900">Full Stack Developer Trainee</p>
+                            <ul class="flex list-disc flex-col gap-2 md:gap-1">
+                                <li class="text-normal text-base">Learned Angular framework for building dynamic
+                                    front-end applications with Bootstrap for responsive design.
+                                    .</li>
+                                <li class="text-normal text-base">Worked with Spring Framework to develop RESTful APIs,
+                                    focusing on Spring Security for authentication and authorization.</li>
+                                <li class="text-normal text-base">Enhanced my understanding of full-stack development by
+                                    integrating front-end and back-end technologies effectively.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="max-md:order-2 md:w-1/4">
+                            <p class="text-base text-gray-700 md:text-right">Sep 2021<!-- --> <!-- -->-<!-- -->
+                                <!-- -->Jan 2022
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray py-16 md:py-20 2xl:py-24" id="work">
+            <div class="flex flex-col  max-w-7xl mx-auto gap-6 md:gap-12 px-4 md:px-8">
+                <div class="flex flex-col items-center gap-4">
+                    <div class="self-center">
+                        <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                            <p class="text-normal text-sm font-medium">Work</p>
+                        </div>
+                    </div>
+                    <p class="text-normal text-lg md:text-xl max-w-xl text-center">Some of the noteworthy projects I
+                        have
+                        built:
+
+                        :</p>
+                </div>
+                <div
+                    class="rounded-xl bg-gray shadow-md dark:bg-gray-100 dark:shadow-2xl mx-auto flex w-full max-w-6xl flex-col md:flex-row">
+                    <div
+                        class="flex items-center justify-center border-gray-100 bg-gray-50 p-8 dark:bg-gray-200 max-md:rounded-t-xl md:w-1/2 lg:p-12 md:rounded-l-xl md:border-r">
+                        <a target="_blank" class="" href="https://equiptal.net/"><img alt="Wingie preview"
+                                loading="lazy" width="1711" height="1141" decoding="async" data-nimg="1"
+                                class="rounded-xl shadow-lg transition-transform duration-500 md:hover:scale-105"
+                                style="color:transparent;object-fit:cover"
+                                src="./asset/images/equiptal-project.png"></a>
+                    </div>
+                    <div class="flex flex-col gap-6 p-8 md:w-1/2 lg:p-12">
+                        <p class="text-lg md:text-xl font-semibold text-gray-900">Equiptal</p>
+                        <p class="text-normal text-base">Equiptal platform is an innovative platform designed for
+                            renting and
+                            managing heavy equipment. It connects equipment owners and renters, enabling seamless
+                            transactions and improving operational efficiency in the construction, mining, and
+                            industrial sectors.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Vue js</p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Leaflet</p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Styled Components</p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Bootstrap</p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Pebble template </p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">HTMX</p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Design System</p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Javalin</p>
+                            </div>
+
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">PostgreSQL</p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">ECharts-Java
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Google Guice
+                                </p>
+                            </div>
+
+                        </div>
+                        <a target="_blank"
+                            class="self-start rounded-lg p-1.5 hover:bg-gray-50 [&amp;_svg]:stroke-gray-500"
+                            href="https://equiptal.net/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-external-link">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" x2="21" y1="14" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="rounded-xl bg-gray shadow-md dark:bg-gray-100 dark:shadow-2xl mx-auto flex w-full max-w-6xl flex-col md:flex-row">
+                    <div class="flex md:order-last items-center justify-center border-gray-100 bg-gray-50 p-8 dark:bg-gray-200 max-md:rounded-t-xl md:w-1/2 lg:p-12 md:rounded-r-xl md:border-r">
+                        <a target="_blank" class="" href="https://birdie-mena.com/"><img alt="Wingie preview"
+                                loading="lazy" width="1711" height="1141" decoding="async" data-nimg="1"
+                                class="rounded-xl shadow-lg transition-transform duration-500 md:hover:scale-105"
+                                style="color:transparent;object-fit:cover" src="./asset/images/birde-project.png"></a>
+                    </div>
+                    <div class="flex flex-col gap-6 p-8 md:w-1/2 lg:p-12">
+                        <p class="text-lg md:text-xl font-semibold text-gray-900">Birdie</p>
+                        <p class="text-normal text-base">Birdie is a platform designed to To Present
+                            their businesses to The world! and build creative brands, and build solid UI/UX mobile and
+                            web
+                            Apps
+                            .
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Vue js</p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Vuex</p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Electron</p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Cordova</p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Styled Components</p>
+                            </div>
+                            <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                                <p class="text-normal text-sm font-medium">Tailwind</p>
+                            </div>
+
+
+
+                        </div>
+                        <a target="_blank"
+                            class="self-start rounded-lg p-1.5 hover:bg-gray-50 [&amp;_svg]:stroke-gray-500"
+                            href="https://birdie-mena.com/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-external-link">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" x2="21" y1="14" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="bg-gray-50 py-16 md:py-20 2xl:py-24" id="contact">
+            <div class="flex flex-col max-w-7xl mx-auto gap-6 md:gap-12 px-4 md:px-8">
+                <div class="flex flex-col items-center gap-4">
+                    <div class="self-center">
+                        <div class="flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1">
+                            <p class="text-normal text-sm font-medium">Get in touch
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-normal text-lg md:text-xl max-w-xl text-center">What’s next? Feel free to reach out
+                        to me if you are looking for a developer, have a query, or simply want to connect.
+                        :</p>
+                </div>
+                <div class="flex flex-col items-center gap-6 md:gap-12">
+                    <div class="flex flex-col items-center md:gap-4">
+                        <div class="flex items-center gap-4 md:gap-5"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 md:h-8 md:w-8">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <h2 class="text-lg md:text-4xl font-semibold tracking-[-0.02em] text-gray-900">
+                                abdalnaser.atrash98@outlook.com</h2>
+                        </div>
+                        <div class="flex items-center gap-4 md:gap-5"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 md:h-8 md:w-8">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <h2 class="text-lg md:text-4xl font-semibold tracking-[-0.02em] text-gray-900">
+                                +9705688441184</h2>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center gap-6">
+                        <p class="text-normal text-base text-center">You may also find me on these platforms!</p>
+                        <div class="flex gap-1">
+                            <button
+                                class="relative flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&amp;_svg]:stroke-gray-600 [&amp;_svg]:hover:stroke-gray-700 [&amp;_svg]:w-6 [&amp;_svg]:h-6"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-github">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                    </path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                            </button>
+                            <button
+                                class="relative flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&amp;_svg]:stroke-gray-600 [&amp;_svg]:hover:stroke-gray-700 [&amp;_svg]:w-6 [&amp;_svg]:h-6"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none"   stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-twitter">
+                                    <path
+                                        d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                    </path>
+                                </svg>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>
